@@ -9,13 +9,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;400;800&family=Montserrat:wght@300;400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;800&family=Montserrat:wght@300;400;500;700;800;900&display=swap"
       rel="stylesheet"
     />
 
     <link rel="stylesheet" href="./assets/css/normalize.css" />
     <link rel="stylesheet" href="./assets/css/general.css" />
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/queries.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script
       src="https://kit.fontawesome.com/8935e48b47.js"
@@ -31,16 +34,15 @@
 
       <nav class="main-nav">
         <ul class="main-nav-list">
-          <li><a class="main-nav-link" href="#">About</a></li>
-          <li><a class="main-nav-link" href="#">Projects</a></li>
-          <li><a class="main-nav-link" href="#">Contact</a></li>
-          <li><a class="main-nav-link" href="#">Social</a></li>
+          <li><a class="main-nav-link" href="#about">About</a></li>
+          <li><a class="main-nav-link" href="#projects">Projects</a></li>
+          <li><a class="main-nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
     <main>
-      <section class="hero-section block-skewed-right">
+      <section class="hero-section block-skewed-right" data-aos="fade-up">
         <div class="hero">
           <div class="hero-text-box">
             <p class="p-hero">Hi, my name is</p>
@@ -78,11 +80,11 @@
           <h2 class="secondary-heading">My Personal Journey</h2>
         </div>
 
-        <div class="container grid grid--2-cols">
+        <div class="container grid grid--2-cols" data-aos="fade-down-right">
           <div class="about-img-box">
             <img
               class="about-img"
-              src="./assets/images/avatar.jpeg"
+              src="./assets/images/avatar.png"
               alt="Picture of Silviu Merfu"
             />
           </div>
@@ -116,52 +118,12 @@
           <h2 class="secondary-heading">Some Things I've Built</h2>
         </div>
 
-        <article class="container-z project grid grid--2-cols">
+        <article
+          class="container-z project grid grid--2-cols"
+          data-aos="fade-right"
+        >
           <div class="project-text-box">
             <h3 class="tertiary-heading">Moshify</h3>
-            <p class="project-description">
-              Jonas Schmedtmann's "Build Responsive Real-World Websites with
-              HTML and CSS" course has provided me with robust skills for
-              crafting responsive websites and a profound understanding of HTML
-              and CSS. The culminating project, a website facilitating the
-              delivery of nutritious meals through artificial intelligence, goes
-              beyond showcasing technical proficiency—it underscores my capacity
-              for creative integration of cutting-edge technologies. Within my
-              portfolio, I've meticulously outlined the development process,
-              shedding light on the intricate details of the project. I've
-              specifically highlighted the aesthetically pleasing design and the
-              groundbreaking functionality incorporated. This project serves as
-              a distinctive and practical addition to my portfolio, presenting
-              me as a versatile web developer attuned to the prevailing trends
-              within the industry.
-            </p>
-
-            <ul class="project-links list">
-              <li>
-                <a class="project-link" href="#" target="_blank"
-                  ><i class="icon fa-solid fa-share-from-square"></i
-                ></a>
-              </li>
-              <li>
-                <a class="project-link" href="#" target="_blank"
-                  ><i class="icon fa-brands fa-github"></i
-                ></a>
-              </li>
-            </ul>
-          </div>
-
-          <picture class="project-img-box">
-            <img
-              class="project-img"
-              src="./assets/images/projects/moshify.png"
-              alt=""
-            />
-          </picture>
-        </article>
-
-        <article class="container-z project grid grid--2-cols">
-          <div class="project-text-box">
-            <h3 class="tertiary-heading">Omnifood</h3>
             <p class="project-description">
               Mosh Hamedani's HTML and CSS course was a captivating educational
               experience where I learned fundamental and advanced techniques for
@@ -185,12 +147,70 @@
 
             <ul class="project-links list">
               <li>
-                <a class="project-link" href="#" target="_blank"
+                <a
+                  class="project-link"
+                  href="https://codewithsilviu.github.io/moshify/"
+                  target="_blank"
                   ><i class="icon fa-solid fa-share-from-square"></i
                 ></a>
               </li>
               <li>
-                <a class="project-link" href="#" target="_blank"
+                <a
+                  class="project-link"
+                  href="https://github.com/codewithsilviu/moshify"
+                  target="_blank"
+                  ><i class="icon fa-brands fa-github"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+
+          <picture class="project-img-box">
+            <img
+              class="project-img"
+              src="./assets/images/projects/moshify.png"
+              alt=""
+            />
+          </picture>
+        </article>
+
+        <article
+          class="container-z project grid grid--2-cols"
+          data-aos="fade-left"
+        >
+          <div class="project-text-box">
+            <h3 class="tertiary-heading">Omnifood</h3>
+            <p class="project-description">
+              Jonas Schmedtmann's "Build Responsive Real-World Websites with
+              HTML and CSS" course has provided me with robust skills for
+              crafting responsive websites and a profound understanding of HTML
+              and CSS. The culminating project, a website facilitating the
+              delivery of nutritious meals through artificial intelligence, goes
+              beyond showcasing technical proficiency—it underscores my capacity
+              for creative integration of cutting-edge technologies. Within my
+              portfolio, I've meticulously outlined the development process,
+              shedding light on the intricate details of the project. I've
+              specifically highlighted the aesthetically pleasing design and the
+              groundbreaking functionality incorporated. This project serves as
+              a distinctive and practical addition to my portfolio, presenting
+              me as a versatile web developer attuned to the prevailing trends
+              within the industry.
+            </p>
+
+            <ul class="project-links list">
+              <li>
+                <a
+                  class="project-link"
+                  href="https://codewithsilviu.github.io/omnifood/"
+                  target="_blank"
+                  ><i class="icon fa-solid fa-share-from-square"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  class="project-link"
+                  href="https://github.com/codewithsilviu/omnifood"
+                  target="_blank"
                   ><i class="icon fa-brands fa-github"></i
                 ></a>
               </li>
@@ -205,7 +225,210 @@
             />
           </picture>
         </article>
+
+        <div class="container all-projects">
+          <a
+            class="github-projects"
+            href="https://github.com/codewithsilviu?tab=repositories"
+            target="_blank"
+            >See all projects on <i class="all-p-icons fa-brands fa-github"> </i
+            ><i class="all-p-icons fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </section>
+
+      <section class="educ-skill-section" data-aos="fade-down-right">
+        <div class="container">
+          <span class="subheading">Education &amp; Skills</span>
+          <h2 class="secondary-heading">
+            Where I've Studied &amp; Expertise Highlights
+          </h2>
+        </div>
+
+        <div class="grid grid--2-cols grid--center-v">
+          <div class="education-section">
+            <ul>
+              <li><p class="didactic-unit">Master's Degree</p></li>
+              <li>
+                <p class="university-name">
+                  "Constantin Brâncuși" University from Târgu-Jiu [ 02/10/2023
+                  &mdash; Current ]
+                </p>
+              </li>
+              <li>
+                <p class="field-name">
+                  Field of study: Advanced Management of Industrial Processes
+                </p>
+              </li>
+            </ul>
+
+            <ul>
+              <li><p class="didactic-unit">Bachelor's Degree</p></li>
+              <li>
+                <p class="university-name">
+                  "Constantin Brâncuși" University from Târgu-Jiu [ 10/10/2019
+                  &mdash; 13/07/2023]
+                </p>
+              </li>
+              <li>
+                <p class="field-name">
+                  Field of study: Automation and Applied Informatics
+                </p>
+              </li>
+            </ul>
+
+            <ul>
+              <li><p class="didactic-unit">High School Diploma</p></li>
+              <li>
+                <p class="university-name">
+                  Târgu-Jiu High School with Sports Program [ 14/09/2015 &mdash;
+                  07/06/2019 ]
+                </p>
+              </li>
+              <li>
+                <p class="field-name">Field of study: Natural Sciences</p>
+              </li>
+            </ul>
+          </div>
+
+          <div class="skills-section">
+            <ul>
+              <li><p class="skill-area">Digital</p></li>
+              <li>
+                <p class="skill">
+                  <span class="digital-skills html-skill">HTML</span>
+                  <span class="digital-skills css-skill">CSS</span>
+                  <span class="digital-skills bootstrap-skill">Bootstrap</span>
+
+                  <span class="digital-skills javascript-skill"
+                    >JavaScript</span
+                  >
+                </p>
+              </li>
+            </ul>
+
+            <ul>
+              <li><p class="skill-area">Communication And Interpersonal</p></li>
+              <li>
+                <p class="skill">
+                  Good communication skills acquired within the activities
+                  carried out during the years of study and personal activities.
+                </p>
+              </li>
+              <li>
+                <p class="skill">Sociable, open person, eager for knowledge.</p>
+              </li>
+            </ul>
+
+            <ul>
+              <li>
+                <p class="skill-area">Organisational</p>
+                <p class="skill">
+                  The ability to multi-task. Ability to meet deadlines.
+                </p>
+                <p class="skill">
+                  Attentive to details and persistent in pursuing goals and
+                  objectives.
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="contact"
+        class="contact-section block-skewed-left"
+        data-aos="fade-up-left"
+      >
+        <div class="container contact block-skewed-left">
+          <span class="subheading">What's Next?</span>
+          <h2 class="secondary-heading contact-subheading">Get In Touch</h2>
+          <p class="contact-text">
+            I am currently seeking new opportunities, and my email inbox is
+            always open to receive valuable connections and dialogues. If you
+            have questions, suggestions, or just want to say hello, I encourage
+            you to reach out! Whether it's discussions related to professional
+            collaborations, interesting projects, or simply exchanging ideas, I
+            will do my best to respond promptly and enthusiastically. Every
+            message is welcomed and appreciated, and I look forward to creating
+            new connections and exploring possibilities together. Thank you for
+            your interest, and I'm eager to hear from you!
+          </p>
+
+          <a
+            class="contact-link"
+            href="mailto:silviumerfu@gmail.com"
+            target="_blank"
+            >Say Hello!</a
+          >
+        </div>
       </section>
     </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <a href="#" class="logo"
+          ><i class="logo-icon fa-solid fa-code fa-flip fa-xs"></i>
+          <p class="logo-name">codewithsilviu</p>
+        </a>
+
+        <div class="copyright-container">
+          <p class="copyright center-text">
+            &copy; Designed & Built by Silviu Merfu. All rights reserved.
+          </p>
+        </div>
+
+        <div class="social-links-col">
+          <ul class="social-links">
+            <li>
+              <a
+                class="footer-link"
+                href="https://github.com/codewithsilviu"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.linkedin.com/in/silviumerfu/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.instagram.com/silviumerfu/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://www.facebook.com/silviumerfu?locale=ro_RO"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+            </li>
+            <li>
+              <a
+                class="footer-link"
+                href="https://twitter.com/silviumerfu"
+                target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

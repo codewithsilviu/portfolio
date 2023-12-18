@@ -156,7 +156,7 @@
 }
 
 .projects {
-  max-width: 150rem;
+  max-width: 13rem;
 }
 
 .project {
@@ -192,8 +192,165 @@
   border: 5px solid #21252942;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .project:nth-of-type(even) .project-text-box {
   order: 2;
+}
+
+.all-projects {
+  display: flex;
+  justify-content: center;
+}
+
+.github-projects:link,
+.github-projects:visited {
+  font-size: 2rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.5s;
+}
+
+.github-projects:hover,
+.github-projects:active {
+  color: #323330;
+}
+
+.all-p-icons {
+  margin-right: 0.8rem;
+}
+
+/* Education and Skills */
+
+.educ-skill-section {
+  padding: 4rem 0 8rem 0;
+}
+
+.didactic-unit,
+.skill-area {
+  font-size: 2rem;
+  margin: 2rem 0 1.6rem 0;
+  font-weight: 700;
+}
+
+.university-name,
+.skill {
+  font-size: 1.6rem;
+  margin-bottom: 0.8rem;
+  font-weight: 500;
+}
+
+.field-name {
+  font-size: 1.4rem;
+}
+
+.digital-skills {
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  color: #fff;
+  margin-right: 1.4rem;
+}
+
+.html-skill {
+  background-color: #f06529;
+}
+
+.css-skill {
+  background-color: #2965f1;
+}
+
+.bootstrap-skill {
+  background-color: #712cf9;
+}
+
+.javascript-skill {
+  background-color: #f0db4f;
+  color: #323330;
+}
+
+/* Contact Section */
+
+.contact-section {
+  padding: 6rem 0 8rem 0;
+  background-color: #000;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-subheading {
+  color: #f1f3f5;
+}
+
+.contact-text {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  text-align: center;
+  color: #f1f3f5;
+  margin-bottom: 5rem;
+}
+
+.contact-link:link,
+.contact-link:visited {
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-primary);
+  padding: 2rem 4rem;
+  margin-bottom: 6.4rem;
+  text-decoration: none;
+  border: 2px solid var(--color-primary);
+  transition: all 0.5s;
+}
+
+.contact-link:hover,
+.contact-link:active {
+  border: 2px solid transparent;
+}
+
+/* Footer */
+
+.footer {
+  padding: 10rem 0 4rem 0;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.copyright:hover {
+  color: var(--color-primary);
+}
+
+.footer-link:link,
+.footer-link:visited {
+  color: var(--color-primary);
+  font-size: 2.4rem;
+  transition: all 0.5s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #323330;
 }

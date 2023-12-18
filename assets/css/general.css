@@ -11,6 +11,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
   overflow-x: hidden;
 }
 
@@ -19,6 +20,11 @@ body {
   line-height: 1;
   font-weight: 400;
   color: var(--color-body);
+  overflow-x: hidden;
+}
+
+ul {
+  list-style: none;
 }
 
 /* General Reusable Components */
@@ -38,8 +44,9 @@ body {
 
 .secondary-heading {
   font-size: 4rem;
+  font-weight: 900;
   margin-top: 0.4rem;
-  margin-bottom: 10rem;
+  margin-bottom: 4rem;
 }
 
 .tertiary-heading {
@@ -48,6 +55,7 @@ body {
   color: #081119;
   border-bottom: 2px solid var(--color-primary);
   margin-bottom: 2rem;
+  padding-bottom: 1rem;
   display: inline-block;
 }
 
@@ -55,7 +63,7 @@ body {
   color: #459ade;
   font-size: 1.6rem;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .list {
@@ -85,6 +93,7 @@ body {
 
 .grid--center-v {
   align-items: center;
+  justify-items: center;
 }
 
 .container--center-v {
@@ -96,4 +105,9 @@ body {
 .block-skewed-right {
   padding-bottom: calc(var(--padding-vertical) + 4rem);
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0 90%);
+}
+
+.block-skewed-left {
+  padding-bottom: calc(var(--padding-vertical) + 4rem);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
 }

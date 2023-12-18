@@ -1,0 +1,192 @@
+/* Below 1344px */
+
+@media (max-width: 84em) {
+  .hero {
+    max-width: 120rem;
+  }
+
+  .primary-heading {
+    font-size: 5.4rem;
+  }
+
+  .p--hero {
+    font-size: 2.4rem;
+  }
+}
+
+/* Below 1200px */
+
+@media (max-width: 77em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .tertiary-heading {
+    font-size: 3.8rem;
+  }
+}
+
+/* Below 1104px */
+
+@media (max-width: 69em) {
+  html {
+    font-size: 50%;
+  }
+
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-text-box,
+  .hero-image-box {
+    text-align: center;
+  }
+
+  .hero-image {
+    width: 60%;
+    margin-bottom: 4rem;
+  }
+
+  .about-section,
+  .project-section,
+  .contact-section {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .educ-skill-section {
+    padding-left: 4rem;
+  }
+}
+
+/* Below 980px */
+
+@media (max-width: 62em) {
+  .hero {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  .primary-heading {
+    font-size: 6rem;
+  }
+
+  .hero-description {
+    font-size: 1.8rem;
+  }
+
+  .secondary-heading {
+    font-size: 3.2rem;
+  }
+
+  .tertiary-heading {
+    font-size: 3.8rem;
+  }
+
+  .p--hero {
+    font-size: 2.8rem;
+  }
+
+  .hero-image {
+    width: 50%;
+  }
+
+  .about-img-box {
+    align-self: center;
+  }
+}
+
+/* Below 752px */
+
+@media (max-width: 47em) {
+  .grid--2-cols {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    row-gap: 3rem;
+  }
+
+  .secondary-heading {
+    margin-bottom: 3rem;
+  }
+
+  .tertiary-heading {
+    margin-top: 2rem;
+  }
+
+  .about-description-box {
+    text-align: center;
+  }
+
+  .project:nth-of-type(even) .project-text-box {
+    order: -1;
+  }
+
+  .project-img-box {
+    text-align: center;
+  }
+
+  .project-img {
+    width: 80%;
+  }
+
+  .project-links {
+    margin-bottom: 2rem;
+  }
+
+  .grid--center-v {
+    justify-items: start;
+  }
+
+  .social-links {
+    gap: 2rem;
+  }
+}
+
+/* Below 672px */
+
+@media (max-width: 42em) {
+  .container {
+    text-align: center;
+  }
+
+  .secondary-heading {
+    font-size: 4.6rem;
+    text-align: center;
+  }
+
+  .subheading {
+    font-size: 2rem;
+  }
+
+  .project-description {
+    line-height: 1.5;
+    font-size: 1.8rem;
+  }
+  .project-links {
+    margin-bottom: 4rem;
+  }
+
+  .educ-skill-section .secondary-heading {
+    margin-bottom: 1rem;
+  }
+}
+
+/* Below 640px */
+
+@media (max-width: 40em) {
+  .footer {
+    padding: 6rem 0 4rem 0;
+  }
+  .footer-container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .education-section {
+    margin-top: 2rem;
+  }
+}
