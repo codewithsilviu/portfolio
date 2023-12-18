@@ -219,4 +219,8 @@
   .footer-icon {
     font-size: 3.8rem;
   }
+
+  .social-links {
+    gap: 6rem;
+  }
 }
