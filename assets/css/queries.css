@@ -112,7 +112,7 @@
   }
 
   .hero-section {
-    padding-top: 7rem;
+    padding-top: 5.4rem;
   }
 
   .about-section {
@@ -195,6 +195,10 @@
 /* Below 640px */
 
 @media (max-width: 40em) {
+  .header {
+    flex-direction: column;
+    gap: 3rem;
+  }
   .footer {
     padding: 6rem 0 4rem 0;
   }
