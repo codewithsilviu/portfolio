@@ -107,14 +107,22 @@
 /* Below 752px */
 
 @media (max-width: 47em) {
-  section {
-    padding-top: 4rem;
-    padding-bottom: 6rem;
-  }
-
   .hero-image {
     width: 70%;
   }
+
+  .about-section {
+    padding-top: 5.6rem;
+  }
+
+  .project-section {
+    padding: 4.2rem 0 5.4rem 0;
+  }
+
+  .educ-skill-section {
+    padding-bottom: 4.8rem;
+  }
+
   .grid--2-cols {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -142,7 +150,7 @@
   }
 
   .project-img {
-    width: 80%;
+    width: 100%;
   }
 
   .project-links {
@@ -182,9 +190,6 @@
 /* Below 640px */
 
 @media (max-width: 40em) {
-  .project-img {
-    width: 100%;
-  }
   .footer {
     padding: 6rem 0 4rem 0;
   }

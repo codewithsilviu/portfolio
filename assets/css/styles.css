@@ -144,7 +144,7 @@
 }
 
 .about-img {
-  width: 75%;
+  width: 100%;
   border-radius: 100%;
   border: 3px solid #000;
 }
@@ -168,7 +168,7 @@
 
 .project-description {
   font-size: 1.6rem;
-  line-height: 1.4;
+  line-height: 1.5;
   margin-bottom: 2rem;
 }
 
