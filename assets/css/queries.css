@@ -202,4 +202,12 @@
   .education-section {
     margin-top: 2rem;
   }
+
+  .footer .logo-name {
+    font-size: 3rem;
+  }
+
+  .footer-icon {
+    font-size: 3.8rem;
+  }
 }
