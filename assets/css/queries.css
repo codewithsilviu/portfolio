@@ -37,6 +37,14 @@
     font-size: 50%;
   }
 
+  .secondary-heading {
+    font-size: 4.6rem;
+  }
+
+  .subheading {
+    font-size: 2rem;
+  }
+
   .hero {
     grid-template-columns: 1fr;
   }
@@ -56,10 +64,6 @@
   .contact-section {
     padding-left: 3rem;
     padding-right: 3rem;
-  }
-
-  .educ-skill-section {
-    padding-left: 4rem;
   }
 }
 
@@ -103,6 +107,14 @@
 /* Below 752px */
 
 @media (max-width: 47em) {
+  section {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+  }
+
+  .hero-image {
+    width: 70%;
+  }
   .grid--2-cols {
     grid-template-columns: 1fr;
     justify-items: center;
@@ -153,15 +165,6 @@
     text-align: center;
   }
 
-  .secondary-heading {
-    font-size: 4.6rem;
-    text-align: center;
-  }
-
-  .subheading {
-    font-size: 2rem;
-  }
-
   .project-description {
     line-height: 1.5;
     font-size: 1.8rem;
@@ -172,15 +175,20 @@
 
   .educ-skill-section .secondary-heading {
     margin-bottom: 1rem;
+    padding: 0 3rem;
   }
 }
 
 /* Below 640px */
 
 @media (max-width: 40em) {
+  .project-img {
+    width: 100%;
+  }
   .footer {
     padding: 6rem 0 4rem 0;
   }
+
   .footer-container {
     flex-direction: column;
     gap: 3rem;
